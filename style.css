@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(
+    circle at 100%,
+    #333,
+    #333 50%,
+    #eee 75%,
+    #333 75%
+  );
+  height: 500px;
+}
+.container {
+  background-color: #d9afd9;
+  border-radius: 20px;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 150px;
+  margin-right: 500px;
+  margin-left: 500px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+
+.bmi-value,
+.status {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-right: 100px;
+}
+
+input{
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-left: 10px;
+  background:#eee;
+}
+
+button{
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  border-radius: 10px;  
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+@media (min-width: 200px) and (max-width: 1300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 250px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 10px;
+  }
+  .bmi-value,
+  .status {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .container h1,
+  label {
+    flex-wrap: wrap;
+    /* background-color: red; */
+  }
+
+  .container {
+    height: auto;
+    width: auto;
+  }
+  input {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
